@@ -1,11 +1,24 @@
 extends ../layouts/default
+include ../helpers/mixins
 
 block variables
 	- const title = "Main";
 
 block content
 	include ../../blocks/modules/sidebar/sidebar
-	include ../../blocks/modules/header/header
+	.main-block
+		.bg-header
+		.main-container
+			include ../../blocks/modules/header/header
+			include ../../blocks/modules/block-01/block-01
+			include ../../blocks/modules/block-02/block-02
+			include ../../blocks/modules/block-03/block-03
+			include ../../blocks/modules/block-04/block-04
+			include ../../blocks/modules/block-05/block-05
+			include ../../blocks/modules/block-06/block-06
+			include ../../blocks/modules/block-07/block-07
+			include ../../blocks/modules/block-08/block-08
+			include ../../blocks/modules/block-09/block-09
 block scripts
 	script(src="../js/pageB.js")
 	script(src="../js/vendor.js")

@@ -25,3 +25,20 @@ body
 .page
 	padding-left: 324px;
 	box-sizing: border-box;
+
+.main-container
+  max-width: 960px
+  padding: 0 24px
+  margin: 0 auto
+
+.bg-header
+  position: absolute
+  width: 100%
+  height: 600px
+  background-color: $color-theme-primary
+  z-index: -1  
+
+.blue-link
+  +link
+  &:hover
+    color: darken($color-link,10%)

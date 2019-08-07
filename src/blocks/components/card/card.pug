@@ -1,0 +1,17 @@
+mixin card(title, text, iconName, imgName, btnName)
+  .card
+    .card__wrap
+      .card__img-wrap
+        img.card__img(src="../../../img/card/"+imgName+".jpg", alt="imgAlt")
+      .card__title-wrap
+        .card__icon-wrap
+          img.card__icon(src="../../../img/svg/"+iconName+".svg", alt="iconAlt")
+        h5.card__title= title
+      .card__content
+        p.card__text= text
+        a.blue-link(href="#") Показать полностью...
+      if btnName
+        button.card__btn= btnName
+      else
+        button.card__btn_hide
+      
