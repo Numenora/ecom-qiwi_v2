@@ -60,11 +60,12 @@
         "stylelint": "^10.0.1",
         "stylelint-order": "^3.0.0",
         "stylelint-selector-bem-pattern": "^2.1.0",
-        "webpack": "~4.35.0",
+        "webpack": "^4.39.1",
         "webpack-stream": "^5.2.1",
         "yargs": "~13.2.4"
     },
     "dependencies": {
+        "jquery": "^3.4.1",
         "smart-grid": "^2.1.2"
     }
 }

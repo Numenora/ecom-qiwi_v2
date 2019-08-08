@@ -1,0 +1,46 @@
+@media (max-width: 1170px)
+  .block__content-wrap
+    padding: 0 0 56px 0
+
+@media (max-width: 1120px)
+  .main-container
+    max-width: 560px
+  .side-bar
+    &__list-item
+      padding: 8px 0
+  .card
+    width: calc(100% - 24px)
+
+@media (max-width: 885px)
+  .side-bar
+    position: fixed
+    width: 100%
+    overflow: hidden
+    border-bottom: 1px solid $color-bg-lighter
+    border-right: none
+    &__wrap
+      display: flex
+      justify-content: space-between
+      padding: 16px 24px
+    &__logo
+      display: none
+    &__title-wrap
+      display: none
+    &__list-item
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+    &__icon
+      display: inline-block
+  .page
+    padding-left: 0
+  h1
+    +title_mobile_h1
+  h2
+    +title_mobile_h2
+  h3
+    +title_mobile_h3
+  h4
+    +title_mobile_h4
+  h5
+    +title_mobile_h5
