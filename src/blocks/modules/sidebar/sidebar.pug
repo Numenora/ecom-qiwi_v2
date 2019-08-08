@@ -8,10 +8,10 @@ aside.side-bar
     .side-bar__title-wrap
       h4.side-bar__title Путеводитель по Молдавии
       p.side-bar__subtitle специально для делегатов Ecommerce Weekend от Qiwi
-    nav.side-bar__nav
-      ul.side-bar__list
+    nav.side-bar__nav.js-menu
+      ul.side-bar__list.js-menu-items
         li.side-bar__list-item
-          a.side-bar__link(href="#block-01") 10 вещей, которые нужно успеть сделать в Молдове
+          a.side-bar__link.side-bar__link_active(href="#block-01") 10 вещей, которые нужно успеть сделать в Молдове
         li.side-bar__list-item
           a.side-bar__link(href="#block-02") Молдова. Общие сведения
         li.side-bar__list-item
@@ -28,6 +28,6 @@ aside.side-bar
           a.side-bar__link(href="#block-08") «Крикова»: лучше любых декораций
         li.side-bar__list-item
           a.side-bar__link(href="#block-09") Старый Орхей: всегда новые эмоции
-    .side-bar__icon
+    a(href='javascript:void(0);').side-bar__icon.js-menu-toggle
       img(src="../../../img/svg/ic-side-bar.svg", alt="Развернуть навигацию")  
   

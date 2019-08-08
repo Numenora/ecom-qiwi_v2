@@ -1,15 +1,19 @@
 h1, h2, h3, h4, h5, h6, ul, p
-    margin: 0
-    padding: 0
+  margin: 0
+  padding: 0
 
 h1
   +title_desktop_h1
+
 h2
   +title_desktop_h2
+
 h3
   +title_desktop_h3
+
 h4
   +title_desktop_h4
+
 h5
   +title_desktop_h5
 
@@ -21,12 +25,11 @@ body
   font-size: 16px
   line-height: 1.6
   color: $color-text-black
-  
+
 .page
-	padding-left: 324px;
-	box-sizing: border-box;
-
-
+  padding-left: 324px
+  box-sizing: border-box
+  overflow-x: hidden
 
 .main-container
   max-width: 960px
@@ -38,17 +41,18 @@ body
   width: 100%
   height: 600px
   background-color: $color-theme-primary
-  z-index: -1  
+  z-index: -1
 
 .blue-link
   +link
+
   &:hover
-    color: darken($color-link,10%)
-    
+    color: darken($color-link, 10%)
+
 .card-wrap
   display: flex
   flex-wrap: wrap
   margin: 0 -12px
-  
+
 .block__content-wrap
   padding: 0 120px 56px 120px
