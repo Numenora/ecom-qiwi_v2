@@ -4,17 +4,17 @@ $(document).ready(function () {
     const links = $("a.side-bar__link");
 
     links.on("click", function (e) {
-        $(".js-menu").removeClass("side-bar__nav_active");
-        let anchor = $(this);
-        const $el = $(e.target);
-        $("html, body").stop().animate({
-            scrollTop: $(anchor.attr("href")).offset().top
-        }, 777);
-        e.preventDefault();
-        links.removeClass("side-bar__link_active");
-        $el.addClass("side-bar__link_active");
-        return false;
-    });
+      $(".js-menu").removeClass("side-bar__nav_active");
+      let anchor = $(this);
+      const $el = $(e.target);
+      $("html, body").stop().animate({
+          scrollTop: $(anchor.attr("href")).offset().top
+      }, 777);
+      e.preventDefault();
+      links.removeClass("side-bar__link_active");
+      $el.addClass("side-bar__link_active");
+      return false;
+  });
 
     $(".blue-link").on("click", (e) => {
         e.preventDefault();
@@ -40,14 +40,14 @@ $(document).ready(function () {
         });
 
 
-    menuItems.click(function (e) {
-        var href = $(this).attr("href"),
-            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-        $("html, body").stop().animate({
-            scrollTop: offsetTop
-        }, 300);
-        e.preventDefault();
-    });
+      //   menuItems.click(function (e) {
+      //     var href = $(this).attr("href"),
+      //         offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+      //     $("html, body").stop().animate({
+      //         scrollTop: offsetTop
+      //     }, 300);
+      //     e.preventDefault();
+      // });
 
     $(window).scroll(function () {
         let fromTop = $(this).scrollTop() + topMenuHeight;
