@@ -22,7 +22,14 @@ $(document).ready(function () {
         $el.siblings(".card__text").css("height", "auto");
         $el.hide();
     });
-
+    
+    $(".btn__more").on("click", (e) => {
+        e.preventDefault();
+        const $el = $(e.target);
+        $el.closest('.js-block').find('.block__hidden').removeClass("js-block-hidden");
+        $el.hide();
+    });
+    
     $(".js-menu-toggle").on("click", () => {
         $(".js-menu").toggleClass("side-bar__nav_active");
     });
@@ -39,15 +46,6 @@ $(document).ready(function () {
             }
         });
 
-
-      //   menuItems.click(function (e) {
-      //     var href = $(this).attr("href"),
-      //         offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-      //     $("html, body").stop().animate({
-      //         scrollTop: offsetTop
-      //     }, 300);
-      //     e.preventDefault();
-      // });
 
     $(window).scroll(function () {
         let fromTop = $(this).scrollTop() + topMenuHeight;
